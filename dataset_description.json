@@ -1,0 +1,44 @@
+{
+    "Name": "He et al. 2025 — VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in Tonal Language",
+    "BIDSVersion": "1.9.0",
+    "HEDVersion": "8.2.0",
+    "DatasetType": "raw",
+    "License": "CC BY 4.0",
+    "Authors": [
+        "Tianyu He",
+        "Mingyi Wei",
+        "Ruicong Wang",
+        "Renzhi Wang",
+        "Shiwei Du",
+        "Siqi Cai",
+        "Wei Tao",
+        "Haizhou Li"
+    ],
+    "HowToAcknowledge": "Please cite: He, T. et al. (2025). VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in Tonal Language. Scientific Data, 12, 703. https://doi.org/10.1038/s41597-025-04741-2",
+    "Funding": [
+        "National Natural Science Foundation of China",
+        "Shenzhen Science and Technology Innovation Program"
+    ],
+    "EthicsApprovals": [
+        "Ethics Committee of South China Hospital, Shenzhen University (HNLS20231229003-A)"
+    ],
+    "ReferencesAndLinks": [
+        "https://doi.org/10.1038/s41597-025-04741-2",
+        "https://zenodo.org/records/14696348",
+        "https://tianyu-h42.github.io/sEEG_speechDecoding/"
+    ],
+    "DatasetDOI": "doi:10.1038/s41597-025-04741-2",
+    "GeneratedBy": [
+        {
+            "Name": "convert_vocalmind.py (EEGDash)",
+            "Description": "Converted Original_sEEG CSV files (raw 1000 Hz) to BIDS-iEEG BrainVision format. Per-trial CSV files are concatenated per speech-mode/task-type with events.tsv marking each stimulus onset.",
+            "CodeURL": "https://github.com/bruaristimunha/EEGDash"
+        }
+    ],
+    "SourceDatasets": [
+        {
+            "URL": "https://zenodo.org/records/14696348",
+            "DOI": "doi:10.5281/zenodo.14696348"
+        }
+    ]
+}
