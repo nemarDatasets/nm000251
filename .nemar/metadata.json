@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "He et al. 2025 — VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in Tonal Language",
+  "description": "VocalMind is a stereotactic EEG (sEEG) dataset comprising intracranial recordings from one participant performing vocalized, mimed, and imagined speech tasks in Mandarin Chinese, a tonal language. The dataset supports research on speech decoding, brain-computer interfaces, and neural mechanisms of overt and covert speech production. Raw recordings sampled at 1000 Hz were converted to BIDS iEEG format with event markers indicating stimulus onsets for each speech modality.",
+  "methods_description": "Stereotactic EEG recordings were obtained while the participant performed three speech modes: vocalized, mimed, and imagined speech in Mandarin Chinese. Raw per-trial recordings at 1000 Hz were converted to BIDS iEEG BrainVision format using the EEGDash conversion pipeline, with per-trial files concatenated by speech mode and task type, and events.tsv files marking stimulus onsets.",
+  "license": "CC BY 4.0",
+  "dataset_type": "raw",
   "authors": {
     "Tianyu He": {},
     "Mingyi Wei": {},
@@ -13,59 +18,6 @@
     "Wei Tao": {},
     "Haizhou Li": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.5281/zenodo.14696348",
-      "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
-    },
-    {
-      "identifier": "10.1038/s41597-025-04741-2",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/nm000251",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000251",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "National Natural Science Foundation of China"
-    },
-    {
-      "funder_name": "Shenzhen Science and Technology Innovation Program"
-    }
-  ],
-  "title": "He et al. 2025 — VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in Tonal Language",
-  "license": "CC BY 4.0",
-  "dataset_type": "raw",
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "ieeg"
-  ],
-  "resource_type_specific": "iEEG Dataset",
-  "sizes": [
-    "2.0 GB (332 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".json",
-    ".py",
-    ".tsv",
-    ".vhdr",
-    ".vmrk",
-    ".wav",
-    ".yml"
-  ],
-  "description": "VocalMind is a stereotactic EEG (sEEG) dataset comprising intracranial recordings from a single participant performing vocalized, mimed, and imagined speech tasks in Mandarin Chinese, a tonal language. The dataset supports research on speech decoding, brain-computer interfaces, and neural mechanisms of overt and covert speech production. Raw recordings sampled at 1000 Hz have been converted to BIDS iEEG format with event markers indicating stimulus onsets for each speech modality.",
-  "methods_description": "Intracranial EEG recordings were obtained at 1000 Hz sampling rate while participants performed three speech tasks: vocalized speech, mimed speech, and imagined speech in Mandarin Chinese. Per-trial recordings were concatenated per speech mode/task type with events.tsv files marking stimulus onsets. Data were converted to BIDS iEEG BrainVision format using the EEGDash conversion pipeline.",
   "keywords": [
     {
       "term": "stereotactic EEG"
@@ -89,5 +41,54 @@
       "term": "Mandarin Chinese"
     }
   ],
-  "source_hash": "4719b6bcd1c035f89360bbc4e413bd7ff924bd0885ca342f126c191beb47554e"
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.14696348",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000251",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000251",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-025-04741-2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "National Natural Science Foundation of China"
+    },
+    {
+      "funder_name": "Shenzhen Science and Technology Innovation Program"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "sizes": [
+    "2.0 GB (332 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".py",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".wav",
+    ".yml"
+  ],
+  "source_hash": "4f15be316db3bff45f77b50ea031644d3196079ed4bcc8dca2a2f4480cf5f3cc"
 }
