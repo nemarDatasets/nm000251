@@ -1,0 +1,58 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000251-blue)](https://doi.org/10.82901/nemar.nm000251)
+
+# VocalMind: a stereotactic EEG (sEEG) dataset for vocalized, mimed, and imagined speech in a tonal language
+
+## Summary
+
+VocalMind is a **stereotactic EEG (sEEG / intracranial EEG)** dataset for speech
+decoding research. Intracranial recordings were obtained while the participant produced
+speech in a **tonal language (Mandarin Chinese)** under three speech modes — **vocalized**,
+**mimed**, and **imagined** speech — supporting research on speech brain–computer
+interfaces (BCI) and neural decoding of overt and covert speech.
+
+The BIDS conversion in this NEMAR record contains intracranial EEG data organised under
+the `ieeg/` modality, with three tasks corresponding to the speech modes:
+`task-vocalized`, `task-mimed`, and `task-imagined`. It currently includes **1 subject**
+(`sub-01`).
+
+## Modality and paradigm
+
+- **Modality:** Intracranial / stereotactic EEG (sEEG, iEEG-BIDS)
+- **Tasks / paradigms:** Vocalized, mimed, and imagined speech in a tonal language
+  (`task-vocalized`, `task-mimed`, `task-imagined`)
+- **Application:** Speech decoding, speech BCI, tonal-language phonetics
+
+## Participants
+
+This BIDS dataset includes **1 subject** (`sub-01`). See `participants.tsv` and the data
+paper for clinical/recording details.
+
+## Original dataset / data paper
+
+Please cite the original Scientific Data descriptor when using this dataset:
+
+> He, T., Wei, M., Wang, R., Wang, R., Du, S., Cai, S., Tao, W., & Li, H. (2025).
+> *VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in
+> Tonal Language.* **Scientific Data, 12, 657.**
+> https://doi.org/10.1038/s41597-025-04741-2
+
+- **DOI:** [10.1038/s41597-025-04741-2](https://doi.org/10.1038/s41597-025-04741-2)
+- **Source data:** [Zenodo record 14696348](https://zenodo.org/records/14696348)
+- **Project page:** https://tianyu-h42.github.io/sEEG_speechDecoding/
+
+## Data structure / BIDS conversion
+
+Raw per-trial recordings (1000 Hz) were converted to BIDS iEEG (BrainVision) format with
+the EEGDash conversion pipeline; per-trial files are concatenated per speech-mode/task
+with `events.tsv` marking each stimulus onset.
+
+## Attribution
+
+All data were collected by the original authors (Tianyu He and colleagues). Please credit
+the original creators and cite the data paper above. This NEMAR record redistributes the
+dataset in BIDS format; MNE-BIDS / iEEG-BIDS and related BIDS tools were used only for
+standardisation, not as the source of the data.
+
+## License
+
+CC BY 4.0 (see `dataset_description.json`).
