@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "He et al. 2025 — VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in Tonal Language",
-  "description": "VocalMind is a stereotactic EEG (sEEG) dataset comprising intracranial recordings from one participant performing vocalized, mimed, and imagined speech tasks in Mandarin Chinese, a tonal language. The dataset supports research on speech decoding, brain-computer interfaces, and neural mechanisms of overt and covert speech production. Raw recordings sampled at 1000 Hz were converted to BIDS iEEG format with event markers indicating stimulus onsets for each speech modality.",
-  "methods_description": "Stereotactic EEG recordings were obtained while the participant performed three speech modes: vocalized, mimed, and imagined speech in Mandarin Chinese. Raw per-trial recordings at 1000 Hz were converted to BIDS iEEG BrainVision format using the EEGDash conversion pipeline, with per-trial files concatenated by speech mode and task type, and events.tsv files marking stimulus onsets.",
+  "description": "VocalMind is a stereotactic EEG (sEEG) dataset for speech decoding research in a tonal language, Mandarin Chinese. Intracranial recordings were acquired while a participant produced vocalized, mimed, and imagined speech. The dataset supports research on speech brain-computer interfaces and neural decoding of overt and covert speech. This BIDS conversion includes one subject with three tasks corresponding to the speech modes.",
+  "methods_description": "Raw per-trial sEEG recordings sampled at 1000 Hz were converted to BIDS iEEG BrainVision format. Per-trial files were concatenated per speech mode/task, with events.tsv marking each stimulus onset.",
   "license": "CC BY 4.0",
   "dataset_type": "raw",
   "authors": {
@@ -29,16 +29,13 @@
       "term": "speech decoding"
     },
     {
-      "term": "brain-computer interfaces"
-    },
-    {
       "term": "imagined speech"
     },
     {
       "term": "tonal language"
     },
     {
-      "term": "Mandarin Chinese"
+      "term": "brain-computer interface"
     }
   ],
   "related_identifiers": [
@@ -53,14 +50,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000251",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1038/s41597-025-04741-2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000251",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -77,7 +74,7 @@
     "ieeg"
   ],
   "sizes": [
-    "2.0 GB (332 files)"
+    "1.89 GB (332 files)"
   ],
   "formats": [
     ".eeg",
