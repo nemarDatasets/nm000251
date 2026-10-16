@@ -1,5 +1,5 @@
 {
-  "Name": "He et al. 2025 — VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in Tonal Language",
+  "Name": "He-2025-vocalmind-10.1038/s41597-025-04741-2",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.2.0",
   "DatasetType": "raw",
@@ -44,5 +44,5 @@
       "DOI": "doi:10.1038/s41597-025-04741-2"
     }
   ],
-  "Version": "1.0.0"
+  "Version": "1.0.1"
 }
