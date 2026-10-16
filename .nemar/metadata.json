@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "He et al. 2025 — VocalMind: A Stereotactic EEG Dataset for Vocalized, Mimed, and Imagined Speech in Tonal Language",
-  "description": "VocalMind is a stereotactic EEG (sEEG) dataset for speech decoding research in a tonal language, Mandarin Chinese. Intracranial recordings were acquired while a participant produced vocalized, mimed, and imagined speech. The dataset supports research on speech brain-computer interfaces and neural decoding of overt and covert speech. This BIDS conversion includes one subject with three tasks corresponding to the speech modes.",
-  "methods_description": "Raw per-trial sEEG recordings sampled at 1000 Hz were converted to BIDS iEEG BrainVision format. Per-trial files were concatenated per speech mode/task, with events.tsv marking each stimulus onset.",
+  "title": "He-2025-vocalmind-10.1038/s41597-025-04741-2",
+  "description": "VocalMind is a stereotactic EEG (sEEG) dataset for speech decoding research in a tonal language (Mandarin Chinese). Intracranial recordings were acquired while a participant produced vocalized, mimed, and imagined speech. The dataset supports research on speech brain-computer interfaces and neural decoding of overt and covert speech. This BIDS release includes one subject.",
+  "methods_description": "Intracranial sEEG recordings were sampled at 1000 Hz during vocalized, mimed, and imagined speech tasks. Per-trial CSV files were concatenated per speech mode and converted to BIDS iEEG (BrainVision) format, with events.tsv marking each stimulus onset.",
   "license": "CC BY 4.0",
   "dataset_type": "raw",
   "authors": {
@@ -26,16 +26,21 @@
       "term": "intracranial EEG"
     },
     {
-      "term": "speech decoding"
-    },
-    {
       "term": "imagined speech"
     },
     {
-      "term": "tonal language"
+      "term": "speech decoding"
     },
     {
       "term": "brain-computer interface"
+    },
+    {
+      "term": "Mandarin Chinese"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     }
   ],
   "related_identifiers": [
@@ -87,5 +92,5 @@
     ".wav",
     ".yml"
   ],
-  "source_hash": "4f15be316db3bff45f77b50ea031644d3196079ed4bcc8dca2a2f4480cf5f3cc"
+  "source_hash": "392cebb1bfebb7e703a354b7f462ce77ef2fed53353136dc6ee8c35876de9c47"
 }
